@@ -10,7 +10,12 @@ html{
         position: relative;
         width: 100%;
     }
-
+.navbar{
+    width:100%;
+}
+.storyys{
+    font: size 16px;
+}
 .card{
         width:300px;
     }
