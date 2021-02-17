@@ -78,12 +78,13 @@ html{
 }
 
 .footbtn{
-    font-size: 16px;
+    font-size: 20px;
     transition: 0.25s;
+    width:40px;
 }
 
 .footbtn:hover{
-    font-size:20px;
+    font-size:25px;
 }
 
 .logos {
