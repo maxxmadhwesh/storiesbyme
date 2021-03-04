@@ -1,6 +1,6 @@
 html{
     scroll-behavior: smooth; 
-    
+    overflow-x: hidden;
 }
 #particles-js canvas {
     display: block;
@@ -332,4 +332,39 @@ html{
       transform: translateY(10);
     }
   }
+
+  .resume{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .thirds {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border-color: #7434db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #7434db inset, 0 0 0 0 #7434db;
+    transition: all 150ms ease-in-out;
+  }
+  .thirds:hover {
+    color: #fff;
+    outline: 0;
+    box-shadow: 0 0 10px 0 #7434db inset, 0 0 10px 4px #7434db;
+  }
+
+
   
