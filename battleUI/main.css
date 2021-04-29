@@ -1,0 +1,246 @@
+body{
+    overflow: hidden;
+    position: absolute;
+    scroll-behavior: smooth;
+    margin: 0%;
+    z-index:1;
+    background-image: url("image/valleyoftheend.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.sasuke{
+    position:absolute;
+    z-index:1;
+    top:280px;
+    left:315px;
+
+}
+
+.naruto{
+    position:absolute;
+    z-index:1;
+    top:280px;
+    left:1190px;
+}
+
+.imgs{
+    position: absolute;
+    z-index: 1;
+}
+.bright{
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    left:650px;
+    top:190px;
+    width:230px;
+    height:230px;
+}
+
+.fireball{
+    opacity: 0;
+    top:270px;
+    left:350px;
+}
+.futon{
+    opacity: 0;
+    top:250px;
+    left:1150px;
+}
+
+.smoke{
+    opacity:0;
+    z-index:5;
+}
+.smoke1{
+    top:150px;
+    left:1000px;
+}
+.smoke2{
+    top:150px;
+    left:1250px;
+}
+.smoke3{
+    top:350px;
+    left:1250px;
+}
+.smoke4{
+    top:350px;
+    left:1000px;
+}
+
+.ph{
+    opacity:0;
+    z-index:4;
+}
+.phoenix1{
+    top:260px;
+    left:400px;
+}
+.phoenix2{
+    top:290px;
+    left:400px;
+}
+.phoenix3{
+    top:320px;
+    left:400px;
+}
+.phoenix4{
+    top:350px;
+    left:400px;
+}
+
+.cl{
+    position: absolute;
+    opacity:0;
+    z-index:3;
+}
+.clone1{
+    top:190px;
+    left:1060px;
+}
+.clone2{
+    top:190px;
+    left:1310px;
+}
+.clone3{
+    top:390px;
+    left:1310px;
+}
+.clone4{
+    top:390px;
+    left:1060px;
+}
+
+.demon{
+    opacity:0;
+    z-index:0;
+    top:270px;
+    left:1180px;
+}
+
+.ras{
+    opacity:0;
+}
+.rsmoke{
+    z-index:5;
+}
+.rsmoke1{
+    top:120px;
+    left:355px;
+}
+.rsmoke2{
+    top:120px;
+    left:95px;
+}
+.rsmoke3{
+    top:320px;
+    left:95px;
+}
+.rsmoke4{
+    top:320px;
+    left:355px;
+}
+
+.cm2{
+    z-index:4;
+}
+.rasengan1{
+    top:190px;
+    left:465px;
+}
+.rasengan2{
+    top:190px;
+    left:205px;
+}
+.rasengan3{
+    top:390px;
+    left:205px;
+}
+.rasengan4{
+    top:390px;
+    left:465px;
+}
+
+.kirin{
+    top:-120px;
+    left:265px;
+}
+.rast1{
+    top:-260px;
+    left:255px;
+    opacity:1;
+}
+.rast2{
+    top:-260px;
+    left:275px;
+    opacity:1;
+}
+
+.finalEx{
+    opacity: 0;
+    z-index:9;
+    top:250px;
+    left:265px;
+}
+
+.bg2{
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    z-index:10;
+    width:100vw;
+}
+.sk2{
+    position:absolute;
+    z-index:12;
+    opacity:0;
+}
+.villain{
+    left:530px;
+    top:500px;
+}
+.hero{
+    left:820px;
+    top:500px;
+}
+.lights{
+    position:absolute;
+    opacity:0;
+    z-index:9;
+    top:-50px;
+    height: 110vh;
+}
+.lights2{
+    left:5vw;
+}
+.lights3{
+    left:70vw;
+}
+.Finalpic{
+    position:absolute;
+    opacity:0;
+    z-index:12;
+    top:520px;
+}
+.susanoo{
+    left:520px;
+}
+.kurama{
+    left:950px;
+}
+
+
+.slider{
+    position:absolute;
+    opacity:1;
+    z-index:14;
+    height: 100vh;
+    width:100vw;
+    top:-100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(12px);
+}
