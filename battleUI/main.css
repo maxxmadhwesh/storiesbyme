@@ -233,6 +233,18 @@ body{
     left:950px;
 }
 
+.finalClass{
+    position: absolute;
+    height: 100vh;
+    width:100vw;
+    z-index:20;
+    opacity:0;
+    background-color: rgb(138, 243, 226);
+    color: rgb(79, 27, 163);
+    font-size: 50px;
+    text-align: center;
+    padding-top: 44vh;
+}
 
 .slider{
     position:absolute;
