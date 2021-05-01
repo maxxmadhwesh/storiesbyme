@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 
 </head>
-  <body onload="animatefunc()">  
+  <body onload="checkScreenSize()">  
     <div class="naruto"><img src="image/Naruto.png" alt="transp1" width="60px" /></div>
 
     <!--Smoke for shadow clone-->
@@ -71,10 +71,24 @@
 
     <img src="image/bg.jpg" class="bg2 "/>
     <div class="slider"></div>
+    <div class="finalClass" id="screenSizeMain" onclick="window.location.href='https://storiesbyme.xyz'">The animations are finished Bro !<br>Click anywhere to go back !!</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script>
+
+      function checkScreenSize(){
+        let width = window.innerWidth;
+        var x = document.getElementById("screenSizeMain");
+        if (width >= 800){
+          animatefunc();
+        }
+        else{
+          x.innerHTML = "This particular webpage is highly NOT RESPONSIVE.<br> Please open in desktop.<br> Click anywhere to go back.";
+          x.style.opacity=1;
+          x.style.fontSize="x-large";
+        }
+      }
 
       function animatefunc(){
         //1st set done in 4 seconds.
@@ -126,8 +140,8 @@
           gsap.to(".sk2",{opacity:0, duration:0.5, delay:20.5});
         
 
-        gsap.to(".kurama",{delay:20.5, x:-50, duration:1, scale:2.2, opacity:1 });
-        gsap.to(".susanoo",{delay:20.5, x:50, duration:1, scale:2, opacity:1 });
+        gsap.to(".kurama",{delay:20.5, x:-75, duration:1.5, scale:2.2, opacity:1 });
+        gsap.to(".susanoo",{delay:20.5, x:75, duration:1.5, scale:2, opacity:1 });
 
         let x=19;
         var i=0;
@@ -137,6 +151,8 @@
             gsap.to(".lights",{opacity:0, delay:x, duration:0.2, x:4});
             x+=0.2;
         }
+
+        gsap.to(".finalClass",{delay:25.5, duration:2, opacity:1 });
 
       }
       
