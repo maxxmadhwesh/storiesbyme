@@ -79,12 +79,14 @@
 
       function checkScreenSize(){
         let width = window.innerWidth;
+        let height = window.innerHeight;
+        console.log("The Height is "+ height +" The width is "+width);
         var x = document.getElementById("screenSizeMain");
-        if (width >= 800){
+        if (width >= 1100){
           animatefunc();
         }
         else{
-          x.innerHTML = "This particular webpage is highly NOT RESPONSIVE.<br> Please open in desktop.<br> Click anywhere to go back.";
+          x.innerHTML = "This particular webpage is highly NOT RESPONSIVE.<br> Please open in desktop. <br> The minimum width set should be around 1250px. <br> Click anywhere to go back.";
           x.style.opacity=1;
           x.style.fontSize="x-large";
         }
