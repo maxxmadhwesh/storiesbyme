@@ -1,3 +1,7 @@
+html{
+    width: 1536px;
+    height:792px;
+}
 body{
     overflow: hidden;
     position: absolute;
