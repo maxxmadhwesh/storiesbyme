@@ -72,6 +72,7 @@
     <img src="image/bg.jpg" class="bg2 "/>
     <div class="slider"></div>
     <div class="finalClass" id="screenSizeMain" onclick="window.location.href='https://storiesbyme.xyz'">The animations are finished Bro !<br>Click anywhere to go back !!</div>
+    <div class = "helloThere" onclick="window.location.href='https://storiesbyme.xyz'"></div>
 
     <script>
 
@@ -81,17 +82,19 @@
         let height = window.screen.height;
         let winHeight = window.innerHeight;
 
-        console.log("The Height is "+ winHeight +" The width is "+winWidth);
-
         var x = document.getElementById("screenSizeMain");
+        var y = document.getElementsByClassName("helloThere");
 
         if (width >= 1100 ){
           animatefunc();
         }
         else{
-          x.innerHTML = "This particular webpage is highly NOT RESPONSIVE.<br> Please open in desktop. <br> The minimum width set should be around 1250px. <br> Click anywhere to go back.";
-          x.style.opacity=1;
           x.style.fontSize="x-large";
+          x.innerHTML = "This particular webpage is highly NOT RESPONSIVE.<br> Please open in desktop. <br> The minimum width set should be around 1250px. <br> Click anywhere to go back.";
+          x.style.display="block";
+          y[0].style.display="block";
+          window.style.backgroundColor = "rgb(138, 243, 194)" ;
+          
         }
       }
 
