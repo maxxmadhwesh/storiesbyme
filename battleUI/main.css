@@ -196,7 +196,7 @@ body{
     left:0;
     opacity:0;
     z-index:10;
-    width:100vw;
+    width:100%;
 }
 .sk2{
     position:absolute;
@@ -239,8 +239,8 @@ body{
 
 .finalClass{
     position: absolute;
-    height: 100vh;
-    width:100vw;
+    height: 100%;
+    width:100%;
     z-index:20;
     opacity:0;
     background-color: rgb(138, 243, 226);
@@ -254,8 +254,8 @@ body{
     position:absolute;
     opacity:1;
     z-index:14;
-    height: 100vh;
-    width:100vw;
+    height: 100%;
+    width:100%;
     top:-100vh;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(12px);
