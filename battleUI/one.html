@@ -71,18 +71,21 @@
 
     <img src="image/bg.jpg" class="bg2 "/>
     <div class="slider"></div>
-    <div class="finalClass" id="screenSizeMain" onclick="window.location.href='https://storiesbyme.xyz/#My_projects'">The animations are finished Bro !<br>Click anywhere to go back !!</div>
+    <div class="finalClass" id="screenSizeMain" onclick="window.location.href='https://storiesbyme.xyz'">The animations are finished Bro !<br>Click anywhere to go back !!</div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script>
 
       function checkScreenSize(){
-        let width = window.innerWidth;
-        let height = window.innerHeight;
-        console.log("The Height is "+ height +" The width is "+width);
+        let width = window.screen.width;
+        let winWidth = window.innerWidth;
+        let height = window.screen.height;
+        let winHeight = window.innerHeight;
+
+        console.log("The Height is "+ winHeight +" The width is "+winWidth);
+
         var x = document.getElementById("screenSizeMain");
-        if (width >= 1100){
+
+        if (winWidth >= 1100 ){
           animatefunc();
         }
         else{
