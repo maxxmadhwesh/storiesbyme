@@ -99,6 +99,11 @@
       }
 
       function animatefunc(){
+
+        var z = document.getElementById("screenSizeMain");
+        z.style.opacity=0;
+        z.style.display="block";
+
         //1st set done in 4 seconds.
           gsap.to(".vanish",{opacity:1,duration:0.4,delay:1.6});
           gsap.to(".fireball",{x:360, y:20, scale:4, duration:1.9, delay:2});
@@ -160,7 +165,7 @@
             x+=0.2;
         }
 
-        gsap.to(".finalClass",{delay:25.5, duration:2, opacity:1 });
+        gsap.to(".finalClass",{delay:25, duration:2, opacity:1 });
 
       }
       
