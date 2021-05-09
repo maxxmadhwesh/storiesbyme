@@ -72,19 +72,13 @@
     <img src="image/bg.jpg" class="bg2 "/>
     <div class="slider"></div>
     <div class="finalClass" id="screenSizeMain">The animations are finished Bro !<br>Click anywhere to go back !!</div>
-    <div class = "helloThere" onclick="window.location.href='https://storiesbyme.xyz'"></div>
+    <div class = "helloThere"></div>
 
     <script>
 
-      function locationSent(){
-        window.location.href='https://storiesbyme.xyz' ;
-      }
-
       function checkScreenSize(){
         let width = window.screen.width;
-        let winWidth = window.innerWidth;
         let height = window.screen.height;
-        let winHeight = window.innerHeight;
 
         var x = document.getElementById("screenSizeMain");
         var y = document.getElementsByClassName("helloThere");
@@ -92,19 +86,23 @@
         if (width >= 1100 ){
           animatefunc();
         }
+
         else{
           x.style.fontSize="x-large";
           x.innerHTML = "This particular webpage is highly NOT RESPONSIVE.<br> Please open in desktop. <br> The minimum width set should be around 1250px. <br> Click anywhere to go back.";
-          x.addEventListener('click',locationSent());
-          y[0].addEventListener('click',locationSent());
+          x.style.opacity=1;
+          y[0].style.opacity=1;
+          x.addEventListener("click", function locationSent(){ window.location.href='https://storiesbyme.xyz';} );
+          y[0].addEventListener("click", function locationSent(){ window.location.href='https://storiesbyme.xyz';} );
         }
       }
 
       function animatefunc(){
 
         var z = document.getElementById("screenSizeMain");
-        z.style.opacity=0;
-        z.style.display="block";
+        z.style.display="none";
+        z.addEventListener("click", function locationSent(){ window.location.href='https://storiesbyme.xyz';} );
+
 
         //1st set done in 4 seconds.
           gsap.to(".vanish",{opacity:1,duration:0.4,delay:1.6});
@@ -167,8 +165,9 @@
             x+=0.2;
         }
 
-        gsap.to(".finalClass",{delay:25, duration:2, opacity:1 });
-
+        gsap.to(".finalClass",{delay:24.5, duration:2, opacity:1, display:"block" });
+        
+        
       }
       
     </script>
