@@ -71,10 +71,14 @@
 
     <img src="image/bg.jpg" class="bg2 "/>
     <div class="slider"></div>
-    <div class="finalClass" id="screenSizeMain" onclick="window.location.href='https://storiesbyme.xyz'">The animations are finished Bro !<br>Click anywhere to go back !!</div>
+    <div class="finalClass" id="screenSizeMain">The animations are finished Bro !<br>Click anywhere to go back !!</div>
     <div class = "helloThere" onclick="window.location.href='https://storiesbyme.xyz'"></div>
 
     <script>
+
+      function locationSent(){
+        window.location.href='https://storiesbyme.xyz' ;
+      }
 
       function checkScreenSize(){
         let width = window.screen.width;
@@ -91,10 +95,8 @@
         else{
           x.style.fontSize="x-large";
           x.innerHTML = "This particular webpage is highly NOT RESPONSIVE.<br> Please open in desktop. <br> The minimum width set should be around 1250px. <br> Click anywhere to go back.";
-          x.style.display="block";
-          y[0].style.display="block";
-          window.style.backgroundColor = "rgb(138, 243, 194)" ;
-          
+          x.addEventListener('click',locationSent());
+          y[0].addEventListener('click',locationSent());
         }
       }
 
