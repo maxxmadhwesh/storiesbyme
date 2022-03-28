@@ -1,2 +1,2 @@
 # storiesbyme
-It is my Personal portfololio website live on @storiesbyme.xyz/
+It is my Personal portfololio website
